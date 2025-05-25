@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Frontend Aplicación GameManager (Nexora)
 
 ## Descripción del Proyecto
@@ -153,3 +154,6 @@ El backend está desarrollado en **Spring Boot** y sigue una arquitectura RESTfu
       }
     }
   }
+=======
+# GameManager-FrontEnd-Web
+>>>>>>> 69b74deaa21480a23b96de6ffa2052da04b34b22
