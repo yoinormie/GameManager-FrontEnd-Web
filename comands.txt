@@ -1,0 +1,7 @@
+Comando para iniciar la vista principal del programa:
+
+flutter pub run flutter_native_splash:create --path=splash.yaml
+
+Si quieres desactivarlo:
+
+flutter pub run flutter_native_splash:remove
