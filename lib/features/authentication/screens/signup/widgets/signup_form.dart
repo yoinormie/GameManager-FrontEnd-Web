@@ -1,4 +1,3 @@
-
 import 'package:ecommerce/features/authentication/screens/signup/verify_email.dart';
 import 'package:ecommerce/features/authentication/screens/signup/widgets/terms_conditions_checkbox.dart';
 import 'package:ecommerce/util/constants/size.dart';
@@ -8,38 +7,13 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
 class TSignupForm extends StatelessWidget {
-  const TSignupForm({
-    super.key,
-  });
+  const TSignupForm({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Form(
       child: Column(
         children: [
-          Row(
-            children: [
-              Expanded(
-                child: TextFormField(
-                  expands: false,
-                  decoration: InputDecoration(
-                    labelText: TTexts.firstName,
-                    prefixIcon: Icon(Iconsax.user),
-                  ),
-                ),
-              ),
-              SizedBox(width: TSize.spaceBetweenInputFields),
-              Expanded(
-                child: TextFormField(
-                  expands: false,
-                  decoration: InputDecoration(
-                    labelText: TTexts.lastName,
-                    prefixIcon: Icon(Iconsax.user),
-                  ),
-                ),
-              ),
-            ],
-          ),
           SizedBox(height: TSize.spaceBetweenInputFields),
           // Username
           TextFormField(
@@ -58,14 +32,6 @@ class TSignupForm extends StatelessWidget {
             ),
           ),
           SizedBox(height: TSize.spaceBetweenInputFields),
-          // Phone Number
-          TextFormField(
-            decoration: InputDecoration(
-              labelText: TTexts.phoneNo,
-              prefixIcon: Icon(Iconsax.call),
-            ),
-          ),
-          SizedBox(height: TSize.spaceBetweenInputFields),
           // Password
           TextFormField(
             obscureText: true,
@@ -73,6 +39,30 @@ class TSignupForm extends StatelessWidget {
               labelText: TTexts.password,
               prefixIcon: Icon(Iconsax.password_check),
               suffixIcon: Icon(Iconsax.eye_slash),
+            ),
+          ),
+          SizedBox(height: TSize.spaceBetweenInputFields),
+          // Phone Number
+          TextFormField(
+            decoration: InputDecoration(
+              labelText: TTexts.name,
+              prefixIcon: Icon(Iconsax.user),
+            ),
+          ),
+          SizedBox(height: TSize.spaceBetweenInputFields),
+          TextField(
+            obscureText: true,
+            decoration: InputDecoration(
+              labelText: TTexts.steam_id,
+              prefixIcon: Icon(Iconsax.game),
+            ),
+          ),
+          SizedBox(height: TSize.spaceBetweenInputFields),
+          TextField(
+            obscureText: true,
+            decoration: InputDecoration(
+              labelText: TTexts.PSN_user,
+              prefixIcon: Icon(Iconsax.gameboy),
             ),
           ),
           SizedBox(height: TSize.spaceBetweenInputFields),
