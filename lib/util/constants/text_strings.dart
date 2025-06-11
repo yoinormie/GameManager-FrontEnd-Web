@@ -40,6 +40,9 @@ class TTexts {
   static const String resendEmail = "Resend Email ";
   static const String resentEmailIn = "Resent email in ";
   static const String and = " and ";
+  static const String name = "Name ";
+  static const String steam_id = "Steam ID ";
+  static const String PSN_user = "PSN User ";
 
   // Login
   static const String loginTitle = "Welcome back!";
