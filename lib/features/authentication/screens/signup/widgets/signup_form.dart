@@ -50,6 +50,7 @@ class TSignupForm extends StatelessWidget {
             ),
           ),
           SizedBox(height: TSize.spaceBetweenInputFields),
+          // Steam ID
           TextField(
             obscureText: true,
             decoration: InputDecoration(
@@ -58,6 +59,7 @@ class TSignupForm extends StatelessWidget {
             ),
           ),
           SizedBox(height: TSize.spaceBetweenInputFields),
+          // PSN User
           TextField(
             obscureText: true,
             decoration: InputDecoration(
