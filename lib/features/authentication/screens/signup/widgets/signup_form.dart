@@ -1,13 +1,22 @@
 import 'package:ecommerce/features/authentication/screens/signup/verify_email.dart';
 import 'package:ecommerce/features/authentication/screens/signup/widgets/terms_conditions_checkbox.dart';
+import 'package:ecommerce/util/auth/authservice.dart';
 import 'package:ecommerce/util/constants/size.dart';
 import 'package:ecommerce/util/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 
-class TSignupForm extends StatelessWidget {
+class TSignupForm extends StatefulWidget {
   const TSignupForm({super.key});
+
+  @override
+  State<TSignupForm> createState() => _TSignupFormState();
+}
+
+class _TSignupFormState extends State<TSignupForm> {
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +35,7 @@ class TSignupForm extends StatelessWidget {
           SizedBox(height: TSize.spaceBetweenInputFields),
           // Email
           TextFormField(
+            controller: emailController,
             decoration: InputDecoration(
               labelText: TTexts.email,
               prefixIcon: Icon(Iconsax.direct),
@@ -34,6 +44,7 @@ class TSignupForm extends StatelessWidget {
           SizedBox(height: TSize.spaceBetweenInputFields),
           // Password
           TextFormField(
+            controller: passwordController,
             obscureText: true,
             decoration: InputDecoration(
               labelText: TTexts.password,
@@ -75,7 +86,28 @@ class TSignupForm extends StatelessWidget {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton(
-              onPressed: () => Get.to(() => VerifyEmailScreen()),
+              onPressed: () {
+                final email = emailController.text.trim();
+                final password = passwordController.text.trim();
+                if (email.isEmpty || password.isEmpty) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(
+                      content: Text('Email y contraseña son obligatorios'),
+                    ),
+                  );
+                  return;
+                }
+                if (AuthService.register(email, password)) {
+                  ScaffoldMessenger.of(
+                    context,
+                  ).showSnackBar(SnackBar(content: Text('Usuario registrado')));
+                  Get.to(() => VerifyEmailScreen());
+                } else {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('Ya existe un usuario registrado')),
+                  );
+                }
+              },
               child: Text(TTexts.createAccount),
             ),
           ),
