@@ -70,27 +70,15 @@ class _LibraryScreenState extends State<LibraryScreen> {
             const Column(
               children: [
                 TGameRowImages(
-                  imagePaths: [
-                    TImages.producBanner1,
-                    TImages.producBanner2,
-                    TImages.producBanner3,
-                  ],
+                  imagePaths: [TImages.game1, TImages.game2, TImages.game3],
                 ),
                 SizedBox(height: TSize.spaceBetweenSections),
                 TGameRowImages(
-                  imagePaths: [
-                    TImages.producBanner3,
-                    TImages.producBanner1,
-                    TImages.producBanner2,
-                  ],
+                  imagePaths: [TImages.game4, TImages.game5, TImages.game6],
                 ),
                 SizedBox(height: TSize.spaceBetweenSections),
                 TGameRowImages(
-                  imagePaths: [
-                    TImages.producBanner2,
-                    TImages.producBanner3,
-                    TImages.producBanner1,
-                  ],
+                  imagePaths: [TImages.game7, TImages.game8, TImages.game10],
                 ),
                 SizedBox(height: TSize.spaceBetweenSections),
               ],
