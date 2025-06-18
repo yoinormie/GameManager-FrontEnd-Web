@@ -66,14 +66,14 @@ class ProfileScreen extends StatelessWidget {
               TProfileMenu(
                 onPressed: () {},
                 title: 'E-mail',
-                value: 'anthony.prado',
+                value: 'tonyprado253',
               ),
               TProfileMenu(
                 onPressed: () {},
                 title: 'Número de teléfono',
                 value: '+31-643567421',
               ),
-              TProfileMenu(onPressed: () {}, title: 'Gender', value: 'Male'),
+              //  TProfileMenu(onPressed: () {}, title: 'Gender', value: 'Male'),
               TProfileMenu(
                 onPressed: () {},
                 title: 'Fecha de nacimiento',
