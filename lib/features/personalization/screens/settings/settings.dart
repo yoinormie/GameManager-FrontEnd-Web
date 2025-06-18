@@ -28,14 +28,16 @@ class SettingsScreen extends StatelessWidget {
                   // AppBar
                   TAppBar(
                     title: Text(
-                      'Account',
+                      'Cuenta',
                       style: Theme.of(
                         context,
                       ).textTheme.headlineMedium!.apply(color: TColors.white),
                     ),
                   ),
                   // User Profile Card
-                  TUserProfileTile(onPressed:()=>Get.to(()=> const ProfileScreen())),
+                  TUserProfileTile(
+                    onPressed: () => Get.to(() => const ProfileScreen()),
+                  ),
                   const SizedBox(height: TSize.spaceBetweenSections),
                 ],
               ),
@@ -47,75 +49,77 @@ class SettingsScreen extends StatelessWidget {
                 children: [
                   // Account Settings
                   const TSectionHeading(
-                    title: 'Account Settings',
+                    title: 'Configuración de la cuenta',
                     showActionButton: false,
                   ),
                   const SizedBox(height: TSize.spaceBetweenItems),
                   TSettingsMenuTile(
                     icon: Iconsax.safe_home,
-                    title: 'My addresses',
-                    subtitle: 'Set shopping delivery address',
-                    onTap: () => Get.to(()=> const UserAddressScreen()),
+                    title: 'Mis direcciones',
+                    subtitle: 'Establecer dirección de entrega para compras',
+                    onTap: () => Get.to(() => const UserAddressScreen()),
                   ),
                   const TSettingsMenuTile(
                     icon: Iconsax.shopping_cart,
-                    title: 'My Cart',
-                    subtitle: 'Add, remove products and move to checkout',
+                    title: 'Mi carrito',
+                    subtitle: 'Agregar, eliminar productos y proceder al pago',
                   ),
                   const TSettingsMenuTile(
                     icon: Iconsax.bag_tick,
-                    title: 'My Orders',
-                    subtitle: 'In-progress and Completed Orders',
+                    title: 'Mis pedidos',
+                    subtitle: 'Pedidos en curso y completados',
                   ),
                   const TSettingsMenuTile(
                     icon: Iconsax.bank,
-                    title: 'Bank Account',
-                    subtitle: 'Withdraw balance to registered bank account',
+                    title: 'Cuenta bancaria',
+                    subtitle: 'Retirar saldo a la cuenta bancaria registrada',
                   ),
                   const TSettingsMenuTile(
                     icon: Iconsax.discount_shape,
-                    title: 'My Coupons',
-                    subtitle: 'List of all the discounted coupons',
+                    title: 'Mis cupones',
+                    subtitle: 'Lista de todos los cupones con descuento',
                   ),
                   const TSettingsMenuTile(
                     icon: Iconsax.notification,
-                    title: 'Notifications',
-                    subtitle: 'Set any kind of notification message',
+                    title: 'Notificaciones',
+                    subtitle:
+                        'Configura cualquier tipo de mensaje de notificación',
                   ),
                   const TSettingsMenuTile(
                     icon: Iconsax.security_card,
-                    title: 'Account Privacy',
-                    subtitle: 'Manage data usage and connected accounts',
+                    title: 'Privacidad de la cuenta',
+                    subtitle: 'Gestionar uso de datos y cuentas conectadas',
                   ),
 
                   // App Settings
                   const SizedBox(height: TSize.spaceBetweenSections),
                   const TSectionHeading(
-                    title: 'App Settings',
+                    title: 'Configuración de la app',
                     showActionButton: false,
                   ),
                   const SizedBox(height: TSize.spaceBetweenItems),
                   const TSettingsMenuTile(
                     icon: Iconsax.document_upload,
-                    title: 'Load Data',
-                    subtitle: 'Upload Data to your Cloud Firebase',
+                    title: 'Cargar datos',
+                    subtitle: 'Subir datos a tu Firebase en la nube',
                   ),
                   TSettingsMenuTile(
                     icon: Iconsax.location,
-                    title: 'Geolocation',
-                    subtitle: 'Set recommendation based on location',
+                    title: 'Geolocalización',
+                    subtitle: 'Configura recomendaciones según ubicación',
                     trailing: Switch(value: true, onChanged: (value) {}),
                   ),
                   TSettingsMenuTile(
                     icon: Iconsax.security_user,
-                    title: 'Safe Mode',
-                    subtitle: 'Search result is safe for all ages',
+                    title: 'Modo seguro',
+                    subtitle:
+                        'Los resultados de búsqueda son seguros para todas las edades',
                     trailing: Switch(value: false, onChanged: (value) {}),
                   ),
                   TSettingsMenuTile(
                     icon: Iconsax.image,
-                    title: 'HD Image Quality',
-                    subtitle: 'Set image quality to be seen',
+                    title: 'Calidad de imagen HD',
+                    subtitle: 'Establecer calidad de imagen a visualizar',
                     trailing: Switch(value: false, onChanged: (value) {}),
                   ),
                   // Logout Button
@@ -126,7 +130,7 @@ class SettingsScreen extends StatelessWidget {
                       onPressed: () {
                         _showLogoutDialog(context);
                       },
-                      child: const Text('Logout'),
+                      child: const Text('Cerrar sesión'),
                     ),
                   ),
                   const SizedBox(height: TSize.spaceBetweenSections),
@@ -157,14 +161,13 @@ void _showLogoutDialog(BuildContext context) {
           // Botón "CANCELAR"
           ElevatedButton(
             onPressed: () {
-              Navigator.of(context).pop(); 
+              Navigator.of(context).pop();
             },
             style: TextButton.styleFrom(
-              
-              foregroundColor: TColors.white, 
+              foregroundColor: TColors.white,
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8), 
+                borderRadius: BorderRadius.circular(8),
               ),
               textStyle: const TextStyle(
                 fontSize: 14,
@@ -176,14 +179,14 @@ void _showLogoutDialog(BuildContext context) {
           // Botón "CERRAR SESION"
           ElevatedButton(
             onPressed: () {
-              Navigator.of(context).pop(); 
+              Navigator.of(context).pop();
               Get.offAll(() => const LoginScreen());
             },
             style: ElevatedButton.styleFrom(
-              foregroundColor: TColors.white, 
+              foregroundColor: TColors.white,
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8), 
+                borderRadius: BorderRadius.circular(8),
               ),
               textStyle: const TextStyle(
                 fontSize: 14,
