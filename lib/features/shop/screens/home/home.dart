@@ -52,11 +52,7 @@ class HomeScreen extends StatelessWidget {
             const Padding(
               padding: EdgeInsets.all(TSize.defaultSpace),
               child: TPromoSlider(
-                banners: [
-                  TImages.producBanner1,
-                  TImages.producBanner2,
-                  TImages.producBanner3,
-                ],
+                banners: [TImages.game1, TImages.game2, TImages.game3],
               ),
             ),
             const Padding(
@@ -64,27 +60,27 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 children: [
                   TGameRow(
-                    imagePath: TImages.producBanner2,
-                    name: 'God of war',
-                    date: '01/01/2025',
+                    imagePath: TImages.game1,
+                    name: 'Hades 2',
+                    date: '18/06/2025',
                   ),
                   SizedBox(height: TSize.spaceBetweenItems),
                   TGameRow(
-                    imagePath: TImages.producBanner2,
-                    name: 'Aitire',
-                    date: '01/01/2025',
+                    imagePath: TImages.game2,
+                    name: 'Counter Strike 2',
+                    date: '17/06/2025',
                   ),
                   SizedBox(height: TSize.spaceBetweenItems),
                   TGameRow(
-                    imagePath: TImages.producBanner2,
-                    name: 'Aitire',
-                    date: '01/01/2025',
+                    imagePath: TImages.game3,
+                    name: 'Doom Eternal',
+                    date: '13/06/2025',
                   ),
                   SizedBox(height: TSize.spaceBetweenItems),
                   TGameRow(
-                    imagePath: TImages.producBanner2,
-                    name: 'Aitire',
-                    date: '01/01/2025',
+                    imagePath: TImages.game4,
+                    name: 'Portal',
+                    date: '21/05/2025',
                   ),
                 ],
               ),
