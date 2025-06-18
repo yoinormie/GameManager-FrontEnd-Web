@@ -5,8 +5,7 @@ import 'package:ecommerce/util/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class TLoginHeader extends StatelessWidget {
-  const TLoginHeader({super.key, });
-
+  const TLoginHeader({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +15,7 @@ class TLoginHeader extends StatelessWidget {
       children: [
         Image(
           height: 150,
-          image: AssetImage(dark ? TImages.darkAppLogo : TImages.lightAppLogo),
+          image: AssetImage(dark ? TImages.logoappdart : TImages.logoapplight),
         ),
         Text(
           TTexts.loginTitle,
