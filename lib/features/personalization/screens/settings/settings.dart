@@ -65,11 +65,6 @@ class SettingsScreen extends StatelessWidget {
                     subtitle: 'Agregar, eliminar productos y proceder al pago',
                   ),
                   const TSettingsMenuTile(
-                    icon: Iconsax.bag_tick,
-                    title: 'Mis pedidos',
-                    subtitle: 'Pedidos en curso y completados',
-                  ),
-                  const TSettingsMenuTile(
                     icon: Iconsax.bank,
                     title: 'Cuenta bancaria',
                     subtitle: 'Retirar saldo a la cuenta bancaria registrada',
@@ -101,13 +96,7 @@ class SettingsScreen extends StatelessWidget {
                   const TSettingsMenuTile(
                     icon: Iconsax.document_upload,
                     title: 'Cargar datos',
-                    subtitle: 'Subir datos a tu Firebase en la nube',
-                  ),
-                  TSettingsMenuTile(
-                    icon: Iconsax.location,
-                    title: 'Geolocalización',
-                    subtitle: 'Configura recomendaciones según ubicación',
-                    trailing: Switch(value: true, onChanged: (value) {}),
+                    subtitle: 'Subir datos',
                   ),
                   TSettingsMenuTile(
                     icon: Iconsax.security_user,
