@@ -2,6 +2,8 @@ class TImages {
   // App Logos
   static const String darkAppLogo = 'assets/logos/aitire-logo-black.png';
   static const String lightAppLogo = 'assets/logos/aitire-logo-white.png';
+  static const String logoapp = "assets/logos/logogmw.png";
+  static const String logoapp2 = "assets/logos/logogmb.png";
 
   // Social Logos
   static const String google = 'assets/logos/google-logo.png';
@@ -33,4 +35,6 @@ class TImages {
   static const String producBanner1 = "assets/images/banners/tiger.jpg";
   static const String producBanner2 = "assets/images/banners/jaguar.jpg";
   static const String producBanner3 = "assets/images/banners/oso.jpg";
+
+  // Games
 }
