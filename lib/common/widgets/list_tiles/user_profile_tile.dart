@@ -11,7 +11,7 @@ class TUserProfileTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       leading: TCircularImage(
-        image: TImages.aitireicon16,
+        image: TImages.gamemanagericon16,
         width: 50,
         height: 50,
         padding: 0,
