@@ -20,13 +20,13 @@ class HomeScreen extends StatelessWidget {
           children: [
             // Header
             TPrimaryHeaderContainer(
-              child:const Column(
+              child: const Column(
                 children: [
                   // AppBar
                   THomeAppBar(),
                   SizedBox(height: TSize.spaceBetweenSections),
                   // SearchBar
-                  TSearchContainer(text: 'Search in Store'),
+                  TSearchContainer(text: 'Buscar en la tienda'),
                   SizedBox(height: TSize.spaceBetweenSections),
                   // Categories
                   Padding(
@@ -35,7 +35,7 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         // Heading
                         TSectionHeading(
-                          title: 'Popular Categories',
+                          title: 'Categorías populares',
                           showActionButton: false,
                           textColor: Colors.white,
                         ),
@@ -51,19 +51,41 @@ class HomeScreen extends StatelessWidget {
             // Body
             const Padding(
               padding: EdgeInsets.all(TSize.defaultSpace),
-              child: TPromoSlider(banners: [TImages.producBanner1,TImages.producBanner2,TImages.producBanner3],),
+              child: TPromoSlider(
+                banners: [
+                  TImages.producBanner1,
+                  TImages.producBanner2,
+                  TImages.producBanner3,
+                ],
+              ),
             ),
-              const Padding(
+            const Padding(
               padding: EdgeInsets.all(TSize.defaultSpace),
               child: Column(
                 children: [
-                  TGameRow(imagePath: TImages.producBanner2, name: 'God of war', date: '01/01/2025'),
-                  SizedBox(height: TSize.spaceBetweenItems,),
-                  TGameRow(imagePath: TImages.producBanner2, name: 'Aitire', date: '01/01/2025'),
-                  SizedBox(height: TSize.spaceBetweenItems,),
-                  TGameRow(imagePath: TImages.producBanner2, name: 'Aitire', date: '01/01/2025'),
-                  SizedBox(height: TSize.spaceBetweenItems,),
-                  TGameRow(imagePath: TImages.producBanner2, name: 'Aitire', date: '01/01/2025'),
+                  TGameRow(
+                    imagePath: TImages.producBanner2,
+                    name: 'God of war',
+                    date: '01/01/2025',
+                  ),
+                  SizedBox(height: TSize.spaceBetweenItems),
+                  TGameRow(
+                    imagePath: TImages.producBanner2,
+                    name: 'Aitire',
+                    date: '01/01/2025',
+                  ),
+                  SizedBox(height: TSize.spaceBetweenItems),
+                  TGameRow(
+                    imagePath: TImages.producBanner2,
+                    name: 'Aitire',
+                    date: '01/01/2025',
+                  ),
+                  SizedBox(height: TSize.spaceBetweenItems),
+                  TGameRow(
+                    imagePath: TImages.producBanner2,
+                    name: 'Aitire',
+                    date: '01/01/2025',
+                  ),
                 ],
               ),
             ),
@@ -73,7 +95,3 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-
-
-
-

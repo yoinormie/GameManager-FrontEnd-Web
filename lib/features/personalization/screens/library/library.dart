@@ -18,25 +18,25 @@ class LibraryScreen extends StatefulWidget {
 class _LibraryScreenState extends State<LibraryScreen> {
   String? selectedValue = 'Reciente'; // Valor inicial
 
-void _handleDropdownChange(String? value){
-  if(value == null) return;
-  setState(() {
-    selectedValue = value;
-  });
-  switch (value){
-    case 'Reciente':
-      ('Ordenar por reciente');
-      break;
-    case 'Nombre':
-      ('Ordenar por nombre');
-      break;
-    case 'Fecha salida':
-      ('Ordenar por fecha de salida');
-      break;
-    default:
-      ('Opción no reconocida');    
+  void _handleDropdownChange(String? value) {
+    if (value == null) return;
+    setState(() {
+      selectedValue = value;
+    });
+    switch (value) {
+      case 'Reciente':
+        ('Ordenar por reciente');
+        break;
+      case 'Nombre':
+        ('Ordenar por nombre');
+        break;
+      case 'Fecha salida':
+        ('Ordenar por fecha de salida');
+        break;
+      default:
+        ('Opción no reconocida');
+    }
   }
-}
 
   @override
   Widget build(BuildContext context) {
@@ -57,11 +57,11 @@ void _handleDropdownChange(String? value){
                     ),
                   ),
                   const SizedBox(height: TSize.spaceBetweenSections),
-                  TSearchContainer(text: 'Search your games'),
+                  TSearchContainer(text: 'Busca tus juegos'),
                   const SizedBox(height: TSize.spaceBetweenSections),
                   TDropdownFilter(
                     selectedValue: selectedValue!,
-                    onChanged:_handleDropdownChange,
+                    onChanged: _handleDropdownChange,
                   ),
                 ],
               ),
