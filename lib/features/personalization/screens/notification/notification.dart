@@ -36,10 +36,9 @@ class _NotificationScreenState extends State<NotificationScreen> {
                   TAppBar(
                     title: Text(
                       'Notification',
-                      style: Theme.of(context)
-                          .textTheme
-                          .headlineMedium!
-                          .apply(color: TColors.white),
+                      style: Theme.of(
+                        context,
+                      ).textTheme.headlineMedium!.apply(color: TColors.white),
                     ),
                   ),
                   const SizedBox(height: TSize.spaceBetweenSections),
@@ -53,9 +52,9 @@ class _NotificationScreenState extends State<NotificationScreen> {
             // Body
             if (hasNotifications)
               TNotificationCard(
-                imagePath: TImages.producBanner2,
+                imagePath: TImages.game10,
                 notificationTitle: 'Nombre app', // juego,
-                appName: 'notificacion', // Rebajas, Amigos, 
+                appName: 'notificacion', // Rebajas, Amigos,
               ),
           ],
         ),
