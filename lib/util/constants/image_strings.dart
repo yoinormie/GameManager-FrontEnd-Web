@@ -2,8 +2,8 @@ class TImages {
   // App Logos
   static const String darkAppLogo = 'assets/logos/aitire-logo-black.png';
   static const String lightAppLogo = 'assets/logos/aitire-logo-white.png';
-  static const String logoapp = "assets/logos/logogmw.png";
-  static const String logoapp2 = "assets/logos/logogmb.png";
+  static const String logoapplight = "assets/logos/logogmw.png";
+  static const String logoappdart = "assets/logos/logogmb.png";
 
   // Social Logos
   static const String google = 'assets/logos/google-logo.png';
