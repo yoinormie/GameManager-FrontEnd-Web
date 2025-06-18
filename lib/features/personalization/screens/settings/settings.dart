@@ -28,7 +28,7 @@ class SettingsScreen extends StatelessWidget {
                   // AppBar
                   TAppBar(
                     title: Text(
-                      'Cuenta',
+                      'Account',
                       style: Theme.of(
                         context,
                       ).textTheme.headlineMedium!.apply(color: TColors.white),
