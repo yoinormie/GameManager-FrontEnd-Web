@@ -8,7 +8,7 @@ class TImages {
   // Social Logos
   static const String google = 'assets/logos/google-logo.png';
   static const String facebook = 'assets/logos/facebook-logo.jpg';
-  static const String steam = 'assets/logos/steam.png';
+  static const String steam = 'assets/logos/steam.webp';
   static const String epic = 'assets/logos/epic.png';
   static const String play = 'assets/logos/play.png';
   static const String xbox = 'assets/logos/xbox.png';
