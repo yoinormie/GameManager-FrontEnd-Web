@@ -30,6 +30,8 @@ class TImages {
       "assets/icons/categories/aitire-icon(16).jpg";
   static const String aitireicon32 =
       "assets/icons/categories/aitire-icon(32).jpg";
+  static const String gamemanagericon16 =
+      "assets/icons/categories/logomgw(16).jpg";
 
   // Banners
   static const String producBanner1 = "assets/images/banners/tiger.jpg";

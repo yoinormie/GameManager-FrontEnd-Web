@@ -25,7 +25,7 @@ class ProfileScreen extends StatelessWidget {
                 child: Column(
                   children: [
                     const TCircularImage(
-                      image: TImages.aitireicon16,
+                      image: TImages.gamemanagericon16,
                       width: 80,
                       height: 80,
                     ),
