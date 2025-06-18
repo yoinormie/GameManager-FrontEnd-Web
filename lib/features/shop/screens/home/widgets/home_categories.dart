@@ -8,11 +8,11 @@ class THomeCategories extends StatelessWidget {
   const THomeCategories({
     super.key,
     this.categories = const [
-      CategoryItem(image: TImages.google, title: 'Steam'),
-      CategoryItem(image: TImages.google, title: 'Epic'),
-      CategoryItem(image: TImages.google, title: 'Play'),
-      CategoryItem(image: TImages.google, title: 'Xbox'),
-      CategoryItem(image: TImages.google, title: 'GOG'),
+      CategoryItem(image: TImages.steam, title: 'Steam'),
+      CategoryItem(image: TImages.play, title: 'Play'),
+      CategoryItem(image: TImages.epic, title: 'Epic'),
+      CategoryItem(image: TImages.xbox, title: 'Xbox'),
+      CategoryItem(image: TImages.gog, title: 'GOG'),
     ],
   });
 
