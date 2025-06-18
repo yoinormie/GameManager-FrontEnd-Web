@@ -60,25 +60,25 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 children: [
                   TGameRow(
-                    imagePath: TImages.game1,
+                    imagePath: TImages.game11,
                     name: 'Hades 2',
                     date: '18/06/2025',
                   ),
                   SizedBox(height: TSize.spaceBetweenItems),
                   TGameRow(
-                    imagePath: TImages.game2,
+                    imagePath: TImages.game22,
                     name: 'Counter Strike 2',
                     date: '17/06/2025',
                   ),
                   SizedBox(height: TSize.spaceBetweenItems),
                   TGameRow(
-                    imagePath: TImages.game3,
+                    imagePath: TImages.game33,
                     name: 'Doom Eternal',
                     date: '13/06/2025',
                   ),
                   SizedBox(height: TSize.spaceBetweenItems),
                   TGameRow(
-                    imagePath: TImages.game4,
+                    imagePath: TImages.game44,
                     name: 'Portal',
                     date: '21/05/2025',
                   ),
