@@ -54,4 +54,13 @@ class TImages {
   static const String game8 = "assets/logos/bat2.jpeg";
   static const String game9 = "assets/logos/spiderman.jpeg";
   static const String game10 = "assets/logos/god.jpg";
+  static const String game11 = "assets/logos/hades2r.jpeg";
+  static const String game22 = "assets/logos/cs2v.webp";
+  static const String game33 = "assets/logos/doom_eternalv.jpg";
+  static const String game44 = "assets/logos/portalv.jpg";
+  static const String game55 = "assets/logos/portal2v.webp";
+  static const String game66 = "assets/logos/resident-evil-7-biohazardv.jpg";
+  static const String game77 = "assets/logos/bat1v.jpeg";
+  static const String game88 = "assets/logos/bat2v.jpeg";
+  static const String game1010 = "assets/logos/godv.jpg";
 }
