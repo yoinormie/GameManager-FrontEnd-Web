@@ -3,21 +3,33 @@ import 'package:ecommerce/util/constants/image_strings.dart';
 import 'package:flutter/material.dart';
 
 class THomeCategories extends StatelessWidget {
-  const THomeCategories({super.key, this.title='VPS'});
-  final String title;
+  final List<CategoryItem> categories;
+
+  const THomeCategories({
+    super.key,
+    this.categories = const [
+      CategoryItem(image: TImages.google, title: 'Steam'),
+      CategoryItem(image: TImages.google, title: 'Epic'),
+      CategoryItem(image: TImages.google, title: 'Play'),
+      CategoryItem(image: TImages.google, title: 'Xbox'),
+      CategoryItem(image: TImages.google, title: 'GOG'),
+    ],
+  });
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
       height: 80,
       child: ListView.builder(
         shrinkWrap: true,
-        itemCount: 6,
+        itemCount: categories.length,
         scrollDirection: Axis.horizontal,
         itemBuilder: (_, index) {
+          final category = categories[index];
           return TVerticalImageText(
-            image: TImages.google,
-            title: title,
-            onTap: () {},
+            image: category.image,
+            title: category.title,
+            onTap: category.onTap ?? () {},
           );
         },
       ),
@@ -25,15 +37,10 @@ class THomeCategories extends StatelessWidget {
   }
 }
 
-// Para el futuro
-class CategoryItem{
+class CategoryItem {
   final String image;
   final String title;
-  final VoidCallback onTap;
+  final VoidCallback? onTap;
 
-  const CategoryItem({
-    required this.image,
-    required this.title,
-    required this.onTap,
-  });
+  const CategoryItem({required this.image, required this.title, this.onTap});
 }
