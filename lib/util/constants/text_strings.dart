@@ -17,7 +17,7 @@ class TTexts {
 
   // Home
   static const String homeAppBarTitle = "Buen día para tus vistas";
-  static const String homeAppBarSubTitle = "Aitire";
+  static const String homeAppBarSubTitle = "GameManager";
 
   // Authentication Form Text
   static const String firstName = "Nombre";
