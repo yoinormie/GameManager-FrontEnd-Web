@@ -31,7 +31,7 @@ class ProfileScreen extends StatelessWidget {
                     ),
                     TextButton(
                       onPressed: () {},
-                      child: const Text('Change Profile Picture'),
+                      child: const Text('Cambiar foto de perfil'),
                     ),
                   ],
                 ),
@@ -41,15 +41,15 @@ class ProfileScreen extends StatelessWidget {
               const Divider(),
               const SizedBox(height: TSize.spaceBetweenItems),
               TSectionHeading(
-                title: 'Profile Information',
+                title: 'Información del perfil',
                 showActionButton: false,
               ),
               const SizedBox(height: TSize.spaceBetweenItems),
-              TProfileMenu(onPressed: () {}, title: 'Name', value: 'Aitire'),
+              TProfileMenu(onPressed: () {}, title: 'Nombre', value: 'Tony'),
               TProfileMenu(
                 onPressed: () {},
-                title: 'Username',
-                value: 'aitire',
+                title: 'Nombre de usuario',
+                value: 'Tony',
               ),
 
               const SizedBox(height: TSize.spaceBetweenItems),
@@ -57,28 +57,39 @@ class ProfileScreen extends StatelessWidget {
               const SizedBox(height: TSize.spaceBetweenItems),
 
               // Heading Personal Info
-              TProfileMenu(onPressed: () {}, title: 'User ID', value: '12819',icon: Iconsax.copy,),
+              TProfileMenu(
+                onPressed: () {},
+                title: 'User ID',
+                value: '12819',
+                icon: Iconsax.copy,
+              ),
               TProfileMenu(
                 onPressed: () {},
                 title: 'E-mail',
                 value: 'anthony.prado',
-              ), 
+              ),
               TProfileMenu(
                 onPressed: () {},
-                title: 'Phone Number',
+                title: 'Número de teléfono',
                 value: '+31-643567421',
               ),
               TProfileMenu(onPressed: () {}, title: 'Gender', value: 'Male'),
               TProfileMenu(
                 onPressed: () {},
-                title: 'Date of Birth',
-                value: '10 Oct, 1999',
+                title: 'Fecha de nacimiento',
+                value: '14 Feb, 2004',
               ),
               const Divider(),
-              const SizedBox(height: TSize.spaceBetweenItems,),
+              const SizedBox(height: TSize.spaceBetweenItems),
               Center(
-                child: TextButton(onPressed: (){}, child: const Text('Close Account',style: TextStyle(color: Colors.red),)),
-              )
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text(
+                    'Cerrar Cuenta',
+                    style: TextStyle(color: Colors.red),
+                  ),
+                ),
+              ),
             ],
           ),
         ),
