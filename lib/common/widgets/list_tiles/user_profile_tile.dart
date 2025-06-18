@@ -5,10 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
 class TUserProfileTile extends StatelessWidget {
-  const TUserProfileTile({
-    super.key,
-    required this.onPressed,
-  });
+  const TUserProfileTile({super.key, required this.onPressed});
   final VoidCallback onPressed;
   @override
   Widget build(BuildContext context) {
@@ -19,10 +16,22 @@ class TUserProfileTile extends StatelessWidget {
         height: 50,
         padding: 0,
       ),
-    title:Text('Aitire',style: Theme.of(context).textTheme.headlineSmall!.apply(color: TColors.white),),
-    subtitle: Text('anthony.prado@aitire.es',style: Theme.of(context).textTheme.bodyMedium!.apply(color: TColors.white),),
-    trailing: IconButton(onPressed: onPressed, icon: const Icon(Iconsax.edit,color: TColors.white,)),
-    
+      title: Text(
+        'Tony',
+        style: Theme.of(
+          context,
+        ).textTheme.headlineSmall!.apply(color: TColors.white),
+      ),
+      subtitle: Text(
+        'tonyprado253@gmail.com',
+        style: Theme.of(
+          context,
+        ).textTheme.bodyMedium!.apply(color: TColors.white),
+      ),
+      trailing: IconButton(
+        onPressed: onPressed,
+        icon: const Icon(Iconsax.edit, color: TColors.white),
+      ),
     );
   }
 }
